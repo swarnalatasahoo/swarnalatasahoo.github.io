@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking App</title>
+    <link rel="stylesheet" href="sahoo.css">
+</head>
+<body>
+    <div class="container">
+       
+    <form   name="register" class="registration-form" onsubmit="return formvalidation()">
+        <h1 class="text-center">Ticket Booking Form</h1>
+
+          <div id="form">
+
+            <h3 class="text-black">Booking Details</h3>
+            <div id="input">
+                <input type="text" class="input-group" placeholder="From">
+                <input type="text" class="input-group" placeholder="To">
+                <input type="text"class="input-group" placeholder="Departure">
+                <input type="text"class="input-group" placeholder="Returndate">
+                <!----->
+                <select name="airLine" id="airLine" class="input-group" style="background :lightsalmon;">
+                    <option value="">Preferred Airline</option>
+                    <option value="">Singapore Airline</option>
+                    <option value="">AirIndia Airline</option>
+                    <option value="">Malesia Airline</option>
+                    
+                </select>
+                <!---->
+                <select name="seat" id="seat" class="input-group" style="background:lightsalmon ;">
+                    <option value="">Preferred Class</option>
+                    <option value="">Economy</option>
+                    <option value="">Business</option>
+                    <option value="">First Class</option>
+                    
+                </select>
+              </div>
+              <!---->
+              <div id="input2">
+                <input type="number" class="input-group" placeholder="Adult">
+                <input type="number" class="input-group" placeholder="Children(2-11yrs)">
+                <input type="number" class="input-group" placeholder="Infant(below 2yrs)">
+              </div>
+                <!---->
+              <div class="input3">
+                <span  class="input-group"  class="text-primary">Select Your Fare:</span>
+                
+                <input type="radio" class="input-group" name="oneWay" id="oneWay">
+                <label class="text-black"for="input-group">One Way</label>
+                
+                <input type="radio" class="input-group" name="roundTrip" id="roundTrip">
+                <label class="text-black" for="input-group" >Round Trip</label>
+               
+              </div>
+              <!---->
+              <div id="input4">
+                Return Date:<input type="date" name="returnDate" id="returnDate"  class="input-group" placeholder="Return Date"><br>
+                Return Time<input type="time"  name="returnTime" id="returnTime"   class="input-group" placeholder="Return Time">
+                <input type="text"           class="input-group1" placeholder="Any Message">
+              </div>
+              <!---->
+              <div id="input5">
+                <h3 class="text-black">Personal Details</h3>
+              </div>
+               <!---->
+               <div id="input6">
+                <input type="text" name="name" id="name" class="input-group" placeholder="Full Name">
+                <input type="text" name="number" id="mobileNumber"    class="input-group" placeholder="Mobile Number">
+                <input type="email" name="email" id="email"class="input-group" placeholder="Email">
+               </div>
+
+               <!---->
+               <div id="input7">
+                <span  id="input-group"  class="text-primary">Gender:</span>
+                
+                <input type="radio" class="input-group" name="gender" value="male">
+                <label class="text-black"for="input-group">Male</label>
+                
+                <input type="radio" class="input-group" name="gender" value="female">
+                <label class="text-black" for="input-group" >Female</label>
+                <input type="radio" class="input-group" name="gender" value="other">
+                <label class="text-black" for="input-group" >Other</label>
+               
+               
+              </div>
+              <button type="submit" class="btn btn-warning text-black">Submit</button>
+              <button type="reset" class="btn btn-primary text-black">Clear</button>
+          </div>
+
+          <script type="text/javascript" src="sahoo.js"></script>
+       
+    </form>
+</body>
+</html>
